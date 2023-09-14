@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/git/ECE_exp2/week3/week3_encoder/week3_encoder.srcs/sources_1/new/week3_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module week3_encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/git/ECE_exp2/week3/week3_encoder/week3_encoder.srcs/sim_1/new/tb_week3_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_week3_encoder
