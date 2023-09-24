@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Thu Sep 14 10:42:07 2023
+| Date         : Mon Sep 18 09:27:29 2023
 | Host         : DESKTOP-SPL8NC2 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file week3_decoder_utilization_placed.rpt -pb week3_decoder_utilization_placed.pb
 | Design       : week3_decoder
@@ -69,8 +69,8 @@ Table of Contents
 +------------------------------------------+------+-------+------------+-----------+-------+
 |                 Site Type                | Used | Fixed | Prohibited | Available | Util% |
 +------------------------------------------+------+-------+------------+-----------+-------+
-| Slice                                    |    1 |     0 |          0 |     16000 | <0.01 |
-|   SLICEL                                 |    1 |     0 |            |           |       |
+| Slice                                    |    2 |     0 |          0 |     16000 |  0.01 |
+|   SLICEL                                 |    2 |     0 |            |           |       |
 |   SLICEM                                 |    0 |     0 |            |           |       |
 | LUT as Logic                             |    4 |     0 |          0 |     48000 | <0.01 |
 |   using O5 output only                   |    0 |       |            |           |       |
@@ -116,9 +116,9 @@ Table of Contents
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   11 |     0 |          0 |       338 |  3.25 |
-|   IOB Master Pads           |    5 |       |            |           |       |
-|   IOB Slave Pads            |    6 |       |            |           |       |
+| Bonded IOB                  |   11 |    11 |          0 |       338 |  3.25 |
+|   IOB Master Pads           |    6 |       |            |           |       |
+|   IOB Slave Pads            |    5 |       |            |           |       |
 | Bonded IPADs                |    0 |     0 |          0 |         2 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         8 |  0.00 |
 | PHASER_REF                  |    0 |     0 |          0 |         8 |  0.00 |
