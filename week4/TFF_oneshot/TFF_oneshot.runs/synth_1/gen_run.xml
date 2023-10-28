@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7s75fgga484-1" LaunchTime="1695519455" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/TFF_oneshot.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7s75fgga484-1" LaunchTime="1695603153" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/TFF_oneshot.dcp">
   <File Type="PA-TCL" Name="TFF_oneshot.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="TFF_oneshot_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="TFF_oneshot_reports.tcl"/>
   <File Type="RDS-RDS" Name="TFF_oneshot.vds"/>
   <File Type="RDS-UTIL" Name="TFF_oneshot_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="TFF_oneshot_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="TFF_oneshot.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="TFF_oneshot_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="TFF_oneshot_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/TFF_oneshot.v">

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Sun Sep 24 10:38:06 2023
+| Date         : Mon Sep 25 09:53:34 2023
 | Host         : DESKTOP-SPL8NC2 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file TFF_oneshot_utilization_placed.rpt -pb TFF_oneshot_utilization_placed.pb
 | Design       : TFF_oneshot
@@ -119,8 +119,8 @@ Table of Contents
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
 | Bonded IOB                  |    4 |     4 |          0 |       338 |  1.18 |
-|   IOB Master Pads           |    1 |       |            |           |       |
-|   IOB Slave Pads            |    3 |       |            |           |       |
+|   IOB Master Pads           |    2 |       |            |           |       |
+|   IOB Slave Pads            |    2 |       |            |           |       |
 | Bonded IPADs                |    0 |     0 |          0 |         2 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         8 |  0.00 |
 | PHASER_REF                  |    0 |     0 |          0 |         8 |  0.00 |
