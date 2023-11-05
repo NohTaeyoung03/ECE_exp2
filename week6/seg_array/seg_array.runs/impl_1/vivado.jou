@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sat Nov  4 21:55:30 2023
+# Process ID: 12752
+# Current directory: C:/git/ECE_exp2/week6/seg_array/seg_array.runs/impl_1
+# Command line: vivado.exe -log seg_array.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source seg_array.tcl -notrace
+# Log file: C:/git/ECE_exp2/week6/seg_array/seg_array.runs/impl_1/seg_array.vdi
+# Journal file: C:/git/ECE_exp2/week6/seg_array/seg_array.runs/impl_1\vivado.jou
+# Running On: DESKTOP-SPL8NC2, OS: Windows, CPU Frequency: 3302 MHz, CPU Physical cores: 4, Host memory: 8266 MB
+#-----------------------------------------------------------
+source seg_array.tcl -notrace

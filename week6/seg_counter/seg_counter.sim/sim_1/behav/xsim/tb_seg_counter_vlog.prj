@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../seg_counter.srcs/sources_1/new/oneshot.v" \
+"../../../../seg_counter.srcs/sources_1/new/seg_counter.v" \
+"../../../../seg_counter.srcs/sim_1/new/tb_seg_counter.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
