@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7s75fgga484-1" LaunchTime="1699166405">
   <File Type="PA-TCL" Name="piezo.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="piezo_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="piezo_reports.tcl"/>
   <File Type="RDS-RDS" Name="piezo.vds"/>
   <File Type="RDS-UTIL" Name="piezo_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="piezo_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="piezo.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="piezo_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="piezo_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/piezo.v">

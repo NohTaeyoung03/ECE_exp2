@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7s75fgga484-1" LaunchTime="1699102478">
+<GenRun Id="impl_1" LaunchPart="xc7s75fgga484-1" LaunchTime="1699230594">
   <File Type="ROUTE-PWR" Name="seg_array_power_routed.rpt"/>
   <File Type="PA-TCL" Name="seg_array.tcl"/>
   <File Type="BITSTR-MMI" Name="seg_array.mmi"/>

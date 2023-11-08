@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date             : Sat Nov  4 21:56:35 2023
+| Date             : Mon Nov  6 09:31:30 2023
 | Host             : DESKTOP-SPL8NC2 running 64-bit major release  (build 9200)
 | Command          : report_power -file seg_array_power_routed.rpt -pb seg_array_power_summary_routed.pb -rpx seg_array_power_routed.rpx
 | Design           : seg_array
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 6.287        |
+| Total On-Chip Power (W)  | 6.285        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 6.167        |
+| Dynamic (W)              | 6.165        |
 | Device Static (W)        | 0.120        |
 | Effective TJA (C/W)      | 2.7          |
 | Max Ambient (C)          | 67.9         |
@@ -52,15 +52,15 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.059 |       53 |       --- |             --- |
-|   LUT as Logic |     0.046 |       16 |     48000 |            0.03 |
+| Slice Logic    |     0.064 |       53 |       --- |             --- |
+|   LUT as Logic |     0.050 |       16 |     48000 |            0.03 |
 |   Register     |     0.007 |       27 |     96000 |            0.03 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
 |   Others       |     0.000 |        4 |       --- |             --- |
-| Signals        |     0.103 |       43 |       --- |             --- |
+| Signals        |     0.097 |       43 |       --- |             --- |
 | I/O            |     6.005 |       19 |       338 |            5.62 |
 | Static Power   |     0.120 |          |           |                 |
-| Total          |     6.287 |          |           |                 |
+| Total          |     6.285 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -70,7 +70,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.198 |       0.170 |      0.028 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.196 |       0.168 |      0.028 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.243 |       0.220 |      0.023 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     1.701 |       1.697 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -135,9 +135,9 @@ Table of Contents
 +-----------+-----------+
 | Name      | Power (W) |
 +-----------+-----------+
-| seg_array |     6.167 |
-|   B1      |     0.047 |
-|   O1      |     0.005 |
+| seg_array |     6.165 |
+|   B1      |     0.051 |
+|   O1      |     0.004 |
 +-----------+-----------+
 
 
