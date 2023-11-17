@@ -1,4 +1,4 @@
-`timescale 1us / 1ns
+`timescale 1ms / 1us
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -42,6 +42,6 @@ initial begin
 end
 
 always begin
-    #0.5 clk <= ~clk;
+    #0.05e+3 clk <= ~clk;
 end
 endmodule

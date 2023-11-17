@@ -1,0 +1,11 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/git/ECE_exp2/week11/DAC/DAC.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+C:/git/ECE_exp2/week11/DAC/DAC.srcs/sim_1/new/tb_DAC.v,1700146879,verilog,,,,tb_DAC,,,,,,,,
+C:/git/ECE_exp2/week11/DAC/DAC.srcs/sources_1/new/DAC.v,1700146773,verilog,,C:/git/ECE_exp2/week11/DAC/DAC.srcs/sources_1/new/LCD.v,,DAC,,,,,,,,
+C:/git/ECE_exp2/week11/DAC/DAC.srcs/sources_1/new/LCD.v,1700233249,verilog,,C:/git/ECE_exp2/week11/DAC/DAC.srcs/sources_1/new/bin2bcd.v,,LCD,,,,,,,,
+C:/git/ECE_exp2/week11/DAC/DAC.srcs/sources_1/new/bin2bcd.v,1700139886,verilog,,C:/git/ECE_exp2/week11/DAC/DAC.srcs/sources_1/new/oneshot_universal.v,,bin2bcd,,,,,,,,
+C:/git/ECE_exp2/week11/DAC/DAC.srcs/sources_1/new/oneshot_universal.v,1700130651,verilog,,C:/git/ECE_exp2/week11/DAC/DAC.srcs/sources_1/new/seg_array.v,,oneshot_universal,,,,,,,,
+C:/git/ECE_exp2/week11/DAC/DAC.srcs/sources_1/new/seg_array.v,1700139558,verilog,,C:/git/ECE_exp2/week11/DAC/DAC.srcs/sim_1/new/tb_DAC.v,,seg_array,,,,,,,,

@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../DAC.srcs/sources_1/new/DAC.v" \
+"../../../../DAC.srcs/sources_1/new/LCD.v" \
+"../../../../DAC.srcs/sources_1/new/bin2bcd.v" \
+"../../../../DAC.srcs/sources_1/new/oneshot_universal.v" \
+"../../../../DAC.srcs/sources_1/new/seg_array.v" \
+"../../../../DAC.srcs/sim_1/new/tb_DAC.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

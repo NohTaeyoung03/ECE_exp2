@@ -1,0 +1,8 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/git/ECE_exp2/week10/LCD/LCD.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+C:/git/ECE_exp2/week10/LCD/LCD.srcs/sim_1/new/tb_LCD.v,1700232187,verilog,,,,tb_LCD,,,,,,,,
+C:/git/ECE_exp2/week10/LCD/LCD.srcs/sources_1/new/LCD.v,1700061561,verilog,,C:/git/ECE_exp2/week10/LCD/LCD.srcs/sources_1/new/oneshot_universal.v,,LCD,,,,,,,,
+C:/git/ECE_exp2/week10/LCD/LCD.srcs/sources_1/new/oneshot_universal.v,1700035872,verilog,,C:/git/ECE_exp2/week10/LCD/LCD.srcs/sim_1/new/tb_LCD.v,,oneshot_universal,,,,,,,,

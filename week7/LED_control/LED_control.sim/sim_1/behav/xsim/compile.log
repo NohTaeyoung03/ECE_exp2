@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/git/ECE_exp2/week7/LED_control/LED_control.srcs/sources_1/new/LED_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LED_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/git/ECE_exp2/week7/LED_control/LED_control.srcs/sources_1/new/bin2bcd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bin2bcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/git/ECE_exp2/week7/LED_control/LED_control.srcs/sources_1/new/conter8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/git/ECE_exp2/week7/LED_control/LED_control.srcs/sources_1/new/seg7_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/git/ECE_exp2/week7/LED_control/LED_control.srcs/sim_1/new/tb_LED_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_LED_control
