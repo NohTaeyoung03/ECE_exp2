@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Fri Nov 17 00:39:26 2023
+| Date         : Mon Nov 20 09:33:48 2023
 | Host         : DESKTOP-SPL8NC2 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file LCD_control_sets_placed.rpt
 | Design       : LCD
@@ -27,7 +27,7 @@ Table of Contents
 |    Minimum number of control sets                        |     6 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    20 |
+| Unused register locations in slices containing registers |    19 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -46,8 +46,8 @@ Table of Contents
 | >= 8 to < 10       |     1 |
 | >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     0 |
-| >= 14 to < 16      |     1 |
-| >= 16              |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     2 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -59,10 +59,10 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |               1 |            1 |
-| No           | No                    | Yes                    |              24 |            8 |
+| No           | No                    | Yes                    |              24 |            7 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |               7 |            4 |
-| Yes          | No                    | Yes                    |              28 |           13 |
+| Yes          | No                    | No                     |               7 |            5 |
+| Yes          | No                    | Yes                    |              29 |           16 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -75,10 +75,10 @@ Table of Contents
 +------------------+------------------------------+------------------+------------------+----------------+--------------+
 |  LCD_E_OBUF_BUFG |                              |                  |                1 |              1 |         1.00 |
 |  LCD_E_OBUF_BUFG | state[3]_i_1_n_0             | O1/rst           |                3 |              4 |         1.33 |
-|  LCD_E_OBUF_BUFG | cursor_position[6]_P_i_1_n_0 |                  |                4 |              7 |         1.75 |
+|  LCD_E_OBUF_BUFG | cursor_position[6]_P_i_1_n_0 |                  |                5 |              7 |         1.40 |
 |  LCD_E_OBUF_BUFG | LCD_RS_i_1_n_0               | O1/rst           |                5 |              9 |         1.80 |
-|  LCD_E_OBUF_BUFG | cnt[6]_i_1_n_0               | O1/rst           |                5 |             15 |         3.00 |
-|  LCD_E_OBUF_BUFG |                              | O1/rst           |                8 |             24 |         3.00 |
+|  LCD_E_OBUF_BUFG | cnt[7]_i_1_n_0               | O1/rst           |                8 |             16 |         2.00 |
+|  LCD_E_OBUF_BUFG |                              | O1/rst           |                7 |             24 |         3.43 |
 +------------------+------------------------------+------------------+------------------+----------------+--------------+
 
 

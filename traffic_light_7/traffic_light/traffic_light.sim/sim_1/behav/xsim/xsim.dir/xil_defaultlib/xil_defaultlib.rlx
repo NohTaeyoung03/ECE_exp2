@@ -1,0 +1,10 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/git/ECE_exp2/traffic_light_7/traffic_light/traffic_light.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+C:/git/ECE_exp2/traffic_light_7/traffic_light/traffic_light.srcs/sim_1/new/tb_traffic_light.v,1702046043,verilog,,,,tb_traffic_light,,,,,,,,
+C:/git/ECE_exp2/traffic_light_7/traffic_light/traffic_light.srcs/sources_1/new/LCD.v,1701650573,verilog,,C:/git/ECE_exp2/traffic_light_7/traffic_light/traffic_light.srcs/sources_1/new/bin2bcd.v,,LCD,,,,,,,,
+C:/git/ECE_exp2/traffic_light_7/traffic_light/traffic_light.srcs/sources_1/new/bin2bcd.v,1700794091,verilog,,C:/git/ECE_exp2/traffic_light_7/traffic_light/traffic_light.srcs/sources_1/new/oneshot_universal.v,,bin2bcd,,,,,,,,
+C:/git/ECE_exp2/traffic_light_7/traffic_light/traffic_light.srcs/sources_1/new/oneshot_universal.v,1700844260,verilog,,C:/git/ECE_exp2/traffic_light_7/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v,,oneshot_universal,,,,,,,,
+C:/git/ECE_exp2/traffic_light_7/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v,1702045863,verilog,,C:/git/ECE_exp2/traffic_light_7/traffic_light/traffic_light.srcs/sim_1/new/tb_traffic_light.v,,traffic_light,,,,,,,,

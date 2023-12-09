@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date             : Fri Nov 17 00:39:51 2023
+| Date             : Mon Nov 20 09:34:33 2023
 | Host             : DESKTOP-SPL8NC2 running 64-bit major release  (build 9200)
 | Command          : report_power -file LCD_power_routed.rpt -pb LCD_power_summary_routed.pb -rpx LCD_power_routed.rpx
 | Design           : LCD
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.430        |
+| Total On-Chip Power (W)  | 1.478        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.325        |
+| Dynamic (W)              | 1.373        |
 | Device Static (W)        | 0.105        |
 | Effective TJA (C/W)      | 2.7          |
-| Max Ambient (C)          | 81.1         |
-| Junction Temperature (C) | 28.9         |
+| Max Ambient (C)          | 81.0         |
+| Junction Temperature (C) | 29.0         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,16 +52,15 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.291 |      192 |       --- |             --- |
-|   LUT as Logic |     0.274 |       99 |     48000 |            0.21 |
-|   Register     |     0.011 |       60 |     96000 |            0.06 |
+| Slice Logic    |     0.295 |      205 |       --- |             --- |
+|   LUT as Logic |     0.279 |      114 |     48000 |            0.24 |
+|   Register     |     0.010 |       61 |     96000 |            0.06 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
-|   F7/F8 Muxes  |    <0.001 |        1 |     64000 |           <0.01 |
 |   Others       |     0.000 |        3 |       --- |             --- |
-| Signals        |     0.248 |      163 |       --- |             --- |
+| Signals        |     0.293 |      174 |       --- |             --- |
 | I/O            |     0.785 |       34 |       338 |           10.06 |
 | Static Power   |     0.105 |          |           |                 |
-| Total          |     1.430 |          |           |                 |
+| Total          |     1.478 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,7 +70,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.612 |       0.596 |      0.016 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.661 |       0.644 |      0.017 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.048 |       0.027 |      0.022 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.210 |       0.206 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -136,8 +135,8 @@ Table of Contents
 +------+-----------+
 | Name | Power (W) |
 +------+-----------+
-| LCD  |     1.325 |
-|   O1 |     0.070 |
+| LCD  |     1.373 |
+|   O1 |     0.067 |
 +------+-----------+
 
 

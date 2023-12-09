@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7s75fgga484-1" LaunchTime="1700149132" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/LCD.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7s75fgga484-1" LaunchTime="1700440317" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/LCD.dcp">
   <File Type="PA-TCL" Name="LCD.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="LCD_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="LCD_reports.tcl"/>
   <File Type="RDS-RDS" Name="LCD.vds"/>
   <File Type="RDS-UTIL" Name="LCD_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="LCD_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="LCD.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="LCD_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="LCD_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/oneshot_universal.v">

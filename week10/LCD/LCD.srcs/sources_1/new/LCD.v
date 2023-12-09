@@ -188,11 +188,11 @@ always @(posedge clk or negedge rst) begin
                     endcase
                 end
                 else if(cnt == 25) begin
-                    if(cursor_position > 7'b1010101) begin
+                    if(cursor_position >= 7'b1010000) begin
                         {LCD_RS, LCD_RW, LCD_DATA} <= 10'b0_0_1100_0000;
                         cursor_position <= 7'b1000000;
                     end
-                    else if(cursor_position > 7'b0010101 && cursor_position < 7'b1000000) begin
+                    else if(cursor_position >= 7'b0010000 && cursor_position < 7'b1000000) begin
                         {LCD_RS, LCD_RW, LCD_DATA} <= 10'b0_0_1000_0000;
                         cursor_position <= 7'b0000000;
                     end

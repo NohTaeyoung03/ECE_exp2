@@ -1,0 +1,357 @@
+
+*** Running vivado
+    with args -log traffic_light.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source traffic_light.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source traffic_light.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/utils_1/imports/synth_1/traffic_light.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/utils_1/imports/synth_1/traffic_light.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top traffic_light -part xc7s75fgga484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s75'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s75'
+INFO: [Device 21-403] Loading part xc7s75fgga484-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 22988
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1189.230 ; gain = 408.883
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'traffic_light' [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:23]
+INFO: [Synth 8-6157] synthesizing module 'LCD' [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/LCD.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bin2bcd' [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/bin2bcd.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bin2bcd' (0#1) [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/bin2bcd.v:23]
+WARNING: [Synth 8-689] width (9) of port connection 'dac_d' does not match port width (8) of module 'bin2bcd' [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/LCD.v:53]
+WARNING: [Synth 8-689] width (9) of port connection 'dac_d' does not match port width (8) of module 'bin2bcd' [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/LCD.v:54]
+INFO: [Synth 8-226] default block is never used [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/LCD.v:65]
+INFO: [Synth 8-226] default block is never used [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/LCD.v:98]
+INFO: [Synth 8-6155] done synthesizing module 'LCD' (0#1) [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/LCD.v:23]
+INFO: [Synth 8-6157] synthesizing module 'oneshot_universal' [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/oneshot_universal.v:23]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'oneshot_universal' (0#1) [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/oneshot_universal.v:23]
+INFO: [Synth 8-6157] synthesizing module 'oneshot_universal__parameterized0' [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/oneshot_universal.v:23]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'oneshot_universal__parameterized0' (0#1) [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/oneshot_universal.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:79]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:135]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:169]
+WARNING: [Synth 8-6090] variable 'S_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:246]
+WARNING: [Synth 8-6090] variable 'N_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:247]
+WARNING: [Synth 8-6090] variable 'W_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:248]
+WARNING: [Synth 8-6090] variable 'E_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:249]
+WARNING: [Synth 8-6090] variable 'S_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:269]
+WARNING: [Synth 8-6090] variable 'N_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:270]
+WARNING: [Synth 8-6090] variable 'W_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:271]
+WARNING: [Synth 8-6090] variable 'E_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:272]
+WARNING: [Synth 8-6090] variable 'S_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:290]
+WARNING: [Synth 8-6090] variable 'N_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:291]
+WARNING: [Synth 8-6090] variable 'W_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:292]
+WARNING: [Synth 8-6090] variable 'E_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:293]
+WARNING: [Synth 8-6090] variable 'S_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:311]
+WARNING: [Synth 8-6090] variable 'N_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:312]
+WARNING: [Synth 8-6090] variable 'W_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:313]
+WARNING: [Synth 8-6090] variable 'E_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:314]
+WARNING: [Synth 8-6090] variable 'S_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:330]
+WARNING: [Synth 8-6090] variable 'N_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:331]
+WARNING: [Synth 8-6090] variable 'W_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:332]
+WARNING: [Synth 8-6090] variable 'E_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:333]
+WARNING: [Synth 8-6090] variable 'S_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:374]
+WARNING: [Synth 8-6090] variable 'N_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:375]
+WARNING: [Synth 8-6090] variable 'W_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:376]
+WARNING: [Synth 8-6090] variable 'E_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:377]
+WARNING: [Synth 8-6090] variable 'S_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:395]
+WARNING: [Synth 8-6090] variable 'N_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:396]
+WARNING: [Synth 8-6090] variable 'W_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:397]
+WARNING: [Synth 8-6090] variable 'E_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:398]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:232]
+WARNING: [Synth 8-6090] variable 'S_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:418]
+WARNING: [Synth 8-6090] variable 'N_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:419]
+WARNING: [Synth 8-6090] variable 'W_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:420]
+WARNING: [Synth 8-6090] variable 'E_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:421]
+WARNING: [Synth 8-6090] variable 'S_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:441]
+WARNING: [Synth 8-6090] variable 'N_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:442]
+WARNING: [Synth 8-6090] variable 'W_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:443]
+WARNING: [Synth 8-6090] variable 'E_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:444]
+WARNING: [Synth 8-6090] variable 'S_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:462]
+WARNING: [Synth 8-6090] variable 'N_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:463]
+WARNING: [Synth 8-6090] variable 'W_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:464]
+WARNING: [Synth 8-6090] variable 'E_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:465]
+WARNING: [Synth 8-6090] variable 'S_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:483]
+WARNING: [Synth 8-6090] variable 'N_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:484]
+WARNING: [Synth 8-6090] variable 'W_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:485]
+WARNING: [Synth 8-6090] variable 'E_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:486]
+WARNING: [Synth 8-6090] variable 'S_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:502]
+WARNING: [Synth 8-6090] variable 'N_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:503]
+WARNING: [Synth 8-6090] variable 'W_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:504]
+WARNING: [Synth 8-6090] variable 'E_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:505]
+WARNING: [Synth 8-6090] variable 'S_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:546]
+WARNING: [Synth 8-6090] variable 'N_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:547]
+WARNING: [Synth 8-6090] variable 'W_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:548]
+WARNING: [Synth 8-6090] variable 'E_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:549]
+WARNING: [Synth 8-6090] variable 'S_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:567]
+WARNING: [Synth 8-6090] variable 'N_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:568]
+WARNING: [Synth 8-6090] variable 'W_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:569]
+WARNING: [Synth 8-6090] variable 'E_YELLOW' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:570]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:404]
+INFO: [Synth 8-6155] done synthesizing module 'traffic_light' (0#1) [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:23]
+WARNING: [Synth 8-7137] Register is_S_YELLOW_reg in module traffic_light has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:220]
+WARNING: [Synth 8-7137] Register is_N_YELLOW_reg in module traffic_light has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:221]
+WARNING: [Synth 8-7137] Register is_W_YELLOW_reg in module traffic_light has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:222]
+WARNING: [Synth 8-7137] Register is_E_YELLOW_reg in module traffic_light has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/sources_1/new/traffic_light.v:223]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1305.301 ; gain = 524.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1305.301 ; gain = 524.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1305.301 ; gain = 524.953
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1305.301 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/constrs_1/new/traffic_light.xdc]
+Finished Parsing XDC File [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/constrs_1/new/traffic_light.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.srcs/constrs_1/new/traffic_light.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/traffic_light_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/traffic_light_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1407.922 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1407.922 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1407.922 ; gain = 627.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s75fgga484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1407.922 ; gain = 627.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1407.922 ; gain = 627.574
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_LCD_reg' in module 'LCD'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   DELAY |                              000 |                              000
+            FUNCTION_SET |                              001 |                              001
+              DISP_ONOFF |                              010 |                              011
+              ENTRY_MODE |                              011 |                              010
+                   LINE1 |                              100 |                              100
+                   LINE2 |                              101 |                              101
+                 DELAY_T |                              110 |                              110
+              CLEAR_DISP |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_LCD_reg' using encoding 'sequential' in module 'LCD'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1407.922 ; gain = 627.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 7     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 6     
+	   2 Input    3 Bit       Adders := 6     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               12 Bit    Registers := 6     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 5     
+	                1 Bit    Registers := 35    
++---Muxes : 
+	   8 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 8     
+	   2 Input   12 Bit        Muxes := 3     
+	   5 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 4     
+	  18 Input    8 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 8     
+	   7 Input    4 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 5     
+	   8 Input    3 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 1     
+	   9 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 303   
+	  18 Input    1 Bit        Muxes := 4     
+	  16 Input    1 Bit        Muxes := 2     
+	   8 Input    1 Bit        Muxes := 5     
+	   5 Input    1 Bit        Muxes := 1     
+	   7 Input    1 Bit        Muxes := 4     
+	   4 Input    1 Bit        Muxes := 4     
+	   9 Input    1 Bit        Muxes := 48    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 140 (col length:80)
+BRAMs: 180 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1407.922 ; gain = 627.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1407.922 ; gain = 627.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1407.922 ; gain = 627.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1407.922 ; gain = 627.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 1407.922 ; gain = 627.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 1407.922 ; gain = 627.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 1407.922 ; gain = 627.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 1407.922 ; gain = 627.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 1407.922 ; gain = 627.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 1407.922 ; gain = 627.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   416|
+|3     |LUT1   |    45|
+|4     |LUT2   |   579|
+|5     |LUT3   |   829|
+|6     |LUT4   |   147|
+|7     |LUT5   |   226|
+|8     |LUT6   |   310|
+|9     |MUXF7  |     5|
+|10    |FDCE   |   233|
+|11    |FDPE   |    45|
+|12    |FDRE   |     4|
+|13    |IBUF   |     8|
+|14    |OBUF   |    35|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 1407.922 ; gain = 627.574
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 1407.922 ; gain = 524.953
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 1407.922 ; gain = 627.574
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1407.922 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 421 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'traffic_light' is not ideal for floorplanning, since the cellview 'traffic_light' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1407.922 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 6f6d9c
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 64 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 1407.922 ; gain = 1010.363
+INFO: [Common 17-1381] The checkpoint 'C:/git/ECE_exp2/traffic_light_3/traffic_light/traffic_light.runs/synth_1/traffic_light.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file traffic_light_utilization_synth.rpt -pb traffic_light_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  4 10:20:28 2023...
